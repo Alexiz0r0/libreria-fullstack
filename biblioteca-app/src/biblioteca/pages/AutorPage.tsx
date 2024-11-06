@@ -135,14 +135,14 @@ export const AutorPage = () => {
         />
       </Dialog>
       <Dialog
-        header='Edit Exist Libro'
+        header='Edit Exist autor'
         visible={showEditMode}
         style={{ width: '30vw' }}
         onHide={() => setShowEditMode(false)}
       >
         <EditAutor
           id={selectedAutorId}
-          setUserEdited={() => {
+          setAutorEdited={() => {
             setShowEditMode(false);
             getAllAutor();
           }}

@@ -33,7 +33,7 @@ const EditAutor = (props) => {
     try {
       const response = await axios.put('http://localhost:8080/api/v1/autores', autorInfo);
       if (response) {
-        props.setUserEdited();
+        props.setAutorEdited();
       }
     } catch (e) {
       console.log(e);
